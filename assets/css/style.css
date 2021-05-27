@@ -227,6 +227,50 @@ h6 {
 }
 
 
+/* --------------About Section ------------ */
+.modal-backdrop.fade.show {
+  height: 0 !important;
+}
+
+.modal-content.abt-modal-ctn {
+  background-color: rgb(113 76 241 / 59%) !important;
+}
+
+.modal-content.abt-modal-ctn::after {
+  content:url(/assets/img/aboutUS.jpg);
+  background: #724cf373;
+  position: absolute;
+  z-index: -1;
+  /* left: 16%; */
+  height: 100%;
+  width: 100%;
+}
+
+.col-md-8.card.d-flex.justify-content-center.align-items-center.flex-column {
+  background-color: #3330301f;
+  /* border: 1px solid rgb(10 10 10 / 68%); */
+  box-shadow: 5px 6px 2px 1px #3e3e3e;
+}
+
+.about-us-btn {
+  border: none !important;
+  background: #fff !important;
+}
+
+.modal-dialog.shadow-lg {
+  width: 70% !important;
+  max-width: 70% !important;
+}
+
+
+
+/* -------- Download Cv Section ------------------- */
+
+.modal-dialog.modal-xl.shadow-lg {
+  width: 90% !important;
+  max-width: 90% !important;
+}
+
 
 
 /* ------------------- Portfolio ------------------- */
@@ -409,28 +453,83 @@ h6 {
   width: 70%;
   background-color: #754ef9;
   z-index: -1;
-  margin: .9rem 0px;
+  margin: 1.2rem 0px;
   height: 90%;
   left: 15%;
 }
 
+
+
 .testimonail-img {
-  height: 25vh;
   justify-content: center;
   display: flex;
   align-items: center;
-  width: 100%;
-  border-radius: 20px solid black;
-  border: 2rem solid #754ef9ad;
+  border: 1rem solid #754ef9ad;
   border-radius: 50%;
-  width: 21%;
   margin: 1rem;
+
 }
 
 .img-inside-testimonial {
   border: 1rem solid #754ef9c2;
   border-radius: 50%;
 }
+
+.img-inside-testimonial:hover {
+
+  border-color: #754ef9c2;
+  transition: all .4s;
+}
+
+
+
+.testimonail-img:hover {
+  border-color: #9678fa;
+  transition: all .4s;
+}
+
+.center-section {
+  height: 70vh;
+}
+
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #403e44;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.carousel-indicators {
+  bottom: -20% !important;
+}
+
+/* .animated-circle:hover{
+  width:30px;
+  height:30px;
+  background:cyan;
+  border-radius:50%;
+  position:absolute;
+  top:0; bottom:0; left:0;right:0;
+  overflow:hidden;
+  margin:auto;
+  animation: circle 6s linear infinite;
+} */
+
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(180px) rotate(0deg);
+
+  }
+
+  100% {
+    transform: rotate(180) translate(360px) rotate(0deg);
+  }
+}
+
+
 
 
 .h-60 {
