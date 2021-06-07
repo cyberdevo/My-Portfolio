@@ -94,6 +94,79 @@ h6 {
   background-color: #fff
 }
 
+
+
+/* play button  */
+
+.ctn-play {
+  width: 100%;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.circle {
+  stroke: #754ef9;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.playBut {
+  /* border: 1px solid red;
+*/
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+}
+
+.playBut .triangle {
+  -webkit-transition: all 0.7s ease-in-out;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  stroke: #000;
+  transform: translateY(0);
+}
+svg {
+  width: 4rem;
+  height: auto;
+}
+
+.playBut:hover .triangle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  stroke: #754ef9;
+  animation: nudge 0.7s ease-in-out;
+}
+
+@keyframes nudge {
+  0% {
+    transform: translateX(0);
+  }
+
+  30% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  70% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.playBut:hover .circle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+
+
 /* 
 .custom-header {
 
@@ -358,6 +431,20 @@ h6 {
   background: #754EF9;
   padding: 15px 20px;
 }
+
+.portfolio-info .playBut:hover .triangle{
+  stroke: #000000;
+}
+.portfolio-info .playBut .triangle{
+  stroke: #ffffff;
+}
+
+
+.portfolio-info circle#XMLID_17_{
+  stroke: #000000;
+}
+
+
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;

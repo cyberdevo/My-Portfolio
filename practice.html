@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,96 @@
   <title>height</title>
 
 
-  
-<style>
-  #img{
-    height: 100vh;
-    width: 100vw; 
-  }
-  #img-in{
-    background-image: url(/assets/img/Banner.jpg);
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    height: 100%;
-    width: 100%;
-  }
 
-</style>
+  <style>
+    .container {
+      width: 100%;
+      text-align: center;
+      margin-top: 25vh;
+    }
+
+    .circle {
+      stroke: #f8aa28;
+      stroke-dasharray: 650;
+      stroke-dashoffset: 650;
+      -webkit-transition: all 0.5s ease-in-out;
+      opacity: 0.3;
+    }
+
+    .playBut {
+      /* border: 1px solid red;
+	*/
+      display: inline-block;
+      -webkit-transition: all 0.5s ease;
+    }
+
+    .playBut .triangle {
+      -webkit-transition: all 0.7s ease-in-out;
+      stroke-dasharray: 240;
+      stroke-dashoffset: 480;
+      stroke: #000;
+      transform: translateY(0);
+    }
+
+    .playBut:hover .triangle {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      stroke: #f8aa28;
+      animation: nudge 0.7s ease-in-out;
+    }
+
+    @keyframes nudge {
+      0% {
+        transform: translateX(0);
+      }
+
+      30% {
+        transform: translateX(-5px);
+      }
+
+      50% {
+        transform: translateX(5px);
+      }
+
+      70% {
+        transform: translateX(-2px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .playBut:hover .circle {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  </style>
 
 
 </head>
 
 
 <body>
-  
-  <div id="img">
-    <img id="img-in" src="" alt="">
-  </div>
 
+  <div class='container'>
+    <a href='#' class='playBut'>
+
+      <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="213.7px" height="213.7px"
+        viewBox="0 0 213.7 213.7" enable-background="new 0 0 213.7 213.7" xml:space="preserve">
+
+        <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round"
+          stroke-linejoin="round" stroke-miterlimit="10" points="
+    73.5,62.5 148.5,105.8 73.5,149.1 " />
+
+        <circle class='circle' id="XMLID_17_" fill="none" stroke-width="7" stroke-linecap="round"
+          stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3" />
+      </svg>
+
+    </a>
+  </div>
 </body>
+
 </html>
