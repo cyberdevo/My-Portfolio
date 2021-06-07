@@ -48,11 +48,11 @@
             <div class="row ">
                 <div class="col-12 col-xxl-12">
                     <div class="row">
-                        <div
+                        <div 
                             class="theme-color header-animation text-white col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 d-flex justify-content-center align-items-center">
                             <h1>Portfolio</h1>
                         </div>
-                        <div
+                        <div 
                             class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-6 d-flex justify-content-center px-5 flex-column align-items-center">
                             <nav id="navbar" class="navbar navbar-expand-lg justify-content-center align-items-center">
 
@@ -1276,7 +1276,8 @@
                         <div
                             class="col-xl-4 col-lg-4 vh-100 col-md-4 col-sm-6 flex-column d-flex justify-content-center align-items-center theme-color position-relative">
                             <div class="row position-absolute w-100 ptr-row">
-                                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                                <div data-aos="zoom-in-down"
+                                    class="col-md-12 d-flex justify-content-center align-items-center">
                                     <div class="circle-parent theme-color position-absolute img-fluid">
                                         <div class="circle-inside">
                                             <div class="circle-img">
@@ -1291,7 +1292,7 @@
                                     <span class="text-uppercase text-white font-weight-bolder">Be Creative</span></div>
                             </div>
                         </div>
-                        <div
+                        <div data-aos="zoom-in-left"
                             class="col-xl-7 col-lg-7 col-md-8 col-sm-6 flex-column d-flex justify-content-center align-items-center">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1329,7 +1330,7 @@
                         <div
                             class="col-xl-1 col-lg-1 col-md-12 col-sm-12  d-flex justify-content-center align-items-center">
                             <div class="row">
-                                <div class="vertical-line font-color" id=" vertical-line">
+                                <div class="vertical-line font-color " id=" vertical-line">
 
                                     <span class="font-color py-3">Follow Me : </span>
                                     <span class="d-inline-block  ver-line"></span>
@@ -1364,7 +1365,7 @@
     <section id="specs" class="specs mx-wdth-ctn">
         <div class="container-xl ">
             <div class="row py-5">
-                <div class="col-lg-4 col-md-4 col-sm-8 col-6 mx-sm-auto ">
+                <div data-aos="fade-right" class="col-lg-4 col-md-4 col-sm-8 col-6 mx-sm-auto ">
                     <div class="box">
                         <div class="img ">
                             <img src="./assets/img/stopwatch.png" alt="">
@@ -1380,7 +1381,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-8 col-6  mx-sm-auto mt-md-0 mt-sm-3">
+                <div data-aos="zoom-in-up" class="col-lg-4 col-md-4 col-sm-8 col-6  mx-sm-auto mt-md-0 mt-sm-3">
                     <div class="box recommended">
                         <div class="img ">
                             <img src="./assets/img/safe-box.png" alt="">
@@ -1396,7 +1397,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-8 col-6  mx-sm-auto mt-md-0 mt-sm-3">
+                <div data-aos="fade-left" class="col-lg-4 col-md-4 col-sm-8 col-6  mx-sm-auto mt-md-0 mt-sm-3">
                     <div class="box">
                         <div class="img ">
                             <img src="./assets/img/icon.png" alt="">
@@ -1423,7 +1424,7 @@
     <section id="portfolio" class="portfolio mx-wdth-ctn">
         <div class="container">
 
-            <div class="section-title">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section-title">
                 <h2>My Portfolio</h2>
 
                 <span class=" text-black-50 text-muted">Web &amp; App</span>
@@ -1442,7 +1443,7 @@
                 </div>
             </div>
 
-            <div class="row portfolio-container">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="row portfolio-container">
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
@@ -1554,7 +1555,7 @@
     <section id="testimonial" class="testimonial mx-wdth-ctn">
         <div class="container">
             <div class="row">
-                <div class="col-12 ">
+                <div data-aos="flip-up" class="col-12 ">
 
                     <div class="section-title">
                         <h2>Valuable Testimonial</h2>
@@ -1566,7 +1567,7 @@
 
             <div class="row d-flex justify-content-center align-items-center position-relative"
                 id="section-testimonial">
-                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 bg-white shadow-lg bg-bdr">
+                <div data-aos="zoom-in-up" class="col-xl-8 col-lg-8 col-md-8 col-sm-12 bg-white shadow-lg bg-bdr">
 
 
                     <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -1679,22 +1680,11 @@
                                     </div>
                                 </div>
 
-
-
                             </div>
-
 
                         </div>
 
                     </div>
-
-
-
-
-
-
-
-
 
                 </div>
             </div>
@@ -1718,9 +1708,62 @@
                             <h6 class="text-black-50">If You Like My Work</h6>
                         </div>
                         <div class="input-group">
-                            <input type="search" class="form-control rounded search-outline height text-center "
+                            <input type="search" id="useremail"
+                                class="form-control rounded search-outline height text-center "
                                 placeholder="Enter yours Email" aria-label="Search">
-                            <button type="button" class="btn text-white btn-custom  rounded-0">Hire Me</button>
+                            <!-- <button type="button" class="btn text-white btn-custom  rounded-0">Hire Me</button> -->
+
+                            <button type="button" class="btn text-white btn-custom  rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#contactModal" data-bs-whatever="@mdo">Hire Me</button>
+                            <form action="javascript:getCtnCreadentials()" method="post">
+
+                                <div class="modal fade" id="contactModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Recipient:</label>
+                                                        <input disabled type="text" class="form-control "
+                                                            id="recipient-name"
+                                                            value="technicaldemonstrations@gmail.com"
+                                                            placeholder="technicaldemonstrations@gmail.com">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="Name" class="col-form-label">Name:</label>
+                                                        <input type="text" class="form-control " id="username">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="Subject" class="col-form-label">Subject:</label>
+                                                        <input type="text" class="form-control " id="subject">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="message-text"
+                                                            class="col-form-label">Message:</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Send
+                                                    message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+
                         </div>
                     </div>
                 </div>
@@ -1772,6 +1815,7 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <!-- <script src="assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/vendor/VenoBox-master/venobox/venobox.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
