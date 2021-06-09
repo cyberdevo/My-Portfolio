@@ -126,6 +126,7 @@ h6 {
   stroke: #000;
   transform: translateY(0);
 }
+
 svg {
   width: 4rem;
   height: auto;
@@ -367,6 +368,14 @@ svg {
 
 
 /* ------------------- Portfolio ------------------- */
+/* .portfolio-img{
+ 
+height: 41vh !important;
+width: 100%;
+box-shadow: 4px 4px 11px 3px #8f6df561;
+border: 1px solid #afadad;
+ 
+} */
 
 .section-title {
   display: flex;
@@ -432,15 +441,16 @@ svg {
   padding: 15px 20px;
 }
 
-.portfolio-info .playBut:hover .triangle{
+.portfolio-info .playBut:hover .triangle {
   stroke: #000000;
 }
-.portfolio-info .playBut .triangle{
+
+.portfolio-info .playBut .triangle {
   stroke: #ffffff;
 }
 
 
-.portfolio-info circle#XMLID_17_{
+.portfolio-info circle#XMLID_17_ {
   stroke: #000000;
 }
 
@@ -557,9 +567,11 @@ svg {
   width: 111%;
   transition: 1.5s all;
   left: -4.9%;
+  animation-delay: .9s;
   top: -5.455%;
-  
+
 }
+
 .circle-inside:hover::after {
   background-color: transparent;
   border: 2rem solid rgb(117 78 249);
@@ -570,13 +582,15 @@ svg {
   top: 3.9%;
   left: 3.9%;
   height: 92%;
-  transition: 1.5s all;
   box-shadow: 2px 3px 20px 4px #5a4f7db5;
   width: 92%;
   content: '';
   position: absolute;
   -moz-animation: spinoffPulse 1s infinite linear;
   -webkit-animation: spinoffPulse 2.2s infinite ease-out;
+  animation-delay: 1s;
+  transition: 1.5s all;
+
 }
 
 
@@ -597,12 +611,12 @@ svg {
 
 @-moz-keyframes spinPulse {
 
-  
+
   0% {
     -moz-transform: rotate(160deg);
     opacity: 0;
     box-shadow: 0 0 1px #bdd73c;
-    transition: 1s;
+
   }
 
   50% {
@@ -943,8 +957,8 @@ input.form-control.rounded.search-outline:focus {
   writing-mode: unset;
 }
 
-.font-adjust > .display-1{
-  font-size: 8vw !important;  
+.font-adjust>.display-1 {
+  font-size: 8vw !important;
   letter-spacing: 1px;
 }
 
@@ -954,12 +968,12 @@ input.form-control.rounded.search-outline:focus {
     
   } */
 
-  /* .ptr-row {
+/* .ptr-row {
     max-width: 650px !important;
     right: 5%;
   }
 
-} */ 
+} */
 
 @media only screen and (max-width: 575px) {
   .vh-100 {
@@ -1000,18 +1014,20 @@ input.form-control.rounded.search-outline:focus {
 }
 
 @media screen and (max-width : 768px) {
-  
+
   .ptr-row {
     max-width: 650px !important;
     right: 5%;
   }
-  .venobox.venobox_custom.text-decoration-none.vbox-item{
+
+  .venobox.venobox_custom.text-decoration-none.vbox-item {
     margin: 0 auto !important;
   }
+
   .vertical-line {
     writing-mode: unset;
     text-orientation: mixed;
-}
+  }
 }
 
 @media only screen and (max-width:992px) and (min-width:768px) {
