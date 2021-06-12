@@ -39,12 +39,12 @@ AS I have vision to become a **Software Engineer** and create a revolution in th
 
 | Plugin | README |
 | ------ | ------ |
-| Tablet | ![image](images/1.png) |
-| Tablet | ![image](images/2.png) |
-| Tablet | ![image](images/3.png) |
+| Desktop | ![image](images/2.png) |
+| Desktop | ![image](images/3.png) |
 | Desktop | ![image](images/4.png) |
-| Desktop | ![image](images/5.png) |
-| Mobile | ![image](images/6.png) |
+| Desktop | ![image](images/1.png) |
+| Mobile | ![image](images/5.png) |
+| Tablet | ![image](images/6.png) |
 
 
 
