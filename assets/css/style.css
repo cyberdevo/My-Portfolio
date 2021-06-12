@@ -551,8 +551,10 @@ border: 1px solid #afadad;
 }
 
 .text-btm {
-  bottom: 10px;
-  left: 30%;
+  position: absolute;
+  top: 19rem;
+  left: 15%;
+  z-index: 1;
 }
 
 .circle-parent:hover::before {
@@ -978,12 +980,19 @@ input.form-control.rounded.search-outline:focus {
 @media only screen and (max-width: 575px) {
   .vh-100 {
     margin-bottom: 2rem !important;
+    height: 70vh !important;
   }
 
+  #rspn{
+    height: 35vh;
+    text-align: center;
+  }
   .text-btm {
-    bottom: 10px !important;
-    left: 40% !important;
-    right: 50% !important;
+    top: 10rem !important;
+    left: 35% !important;
+  }
+  .box{
+    margin-top: 2rem !important;
   }
 
   .circle-parent {
@@ -993,6 +1002,10 @@ input.form-control.rounded.search-outline:focus {
     left: 0 !important;
     right: 0 !important;
   }
+
+  .circle-inside {
+    border: 25px solid #ffffff ;
+}
 
   .venobox.venobox_custom.vbox-item {
     margin-left: 0 !important;
@@ -1004,8 +1017,17 @@ input.form-control.rounded.search-outline:focus {
   }
 
   .vertical-line {
-    writing-mode: unset;
-    height: 10vh;
+    position: absolute;
+    top: 1.5rem;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .vertical-line-js{
+        position: absolute;
+    bottom: 0%;
+    width: 44vw;
+    left: 30%;
+     right: 0%;
   }
 
   .col-xl-7.col-lg-7.col-md-7.col-sm-7.col-12.flex-column.d-flex.justify-content-center.align-items-center {

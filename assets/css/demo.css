@@ -20,9 +20,6 @@ a.demo-btn-on-bg:active,
     border: none
 }
 
-body {
-    overflow-x: hidden
-}
 
 .config-trigger {
     position: absolute;

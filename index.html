@@ -9,11 +9,10 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
 
 
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/VenoBox-master/venobox/venobox.css">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -23,8 +22,11 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/pillar-1.css">
+    <!-- <link rel="stylesheet" href="assets/css/pillar-1.css"> -->
     <link rel="stylesheet" href="assets/css/demo.css">
+
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
 
     <title>My portfolio</title>
 </head>
@@ -1259,13 +1261,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-
-
                     <div class="row bg-white ">
                         <div
                             class="col-xl-4 col-lg-4 vh-100 col-md-4 col-sm-6 flex-column d-flex justify-content-center align-items-center theme-color position-relative">
                             <div class="row position-absolute w-100 ptr-row">
-                                <div data-aos="zoom-in-down"
+                                <div data-aos="fade-up"
                                     class="col-md-12 d-flex justify-content-center align-items-center">
                                     <div class="circle-parent theme-color position-absolute img-fluid">
                                         <div class="circle-inside">
@@ -1274,14 +1274,19 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="text-btm">
+                                        <span class="text-uppercase text-white font-weight-bolder">Be Creative</span>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="col-md-12 position-absolute text-btm">
                                     <span class="text-uppercase text-white font-weight-bolder">Be Creative</span></div>
-                            </div>
+                            </div> -->
                         </div>
-                        <div data-aos="zoom-in-left"
+                        <div id="rspn" data-aos="fade-up"
                             class="col-xl-7 col-lg-7 col-md-8 col-sm-6 flex-column d-flex justify-content-center align-items-center">
                             <div class="row">
                                 <div class="col-md-12">
@@ -1300,7 +1305,7 @@
 
                             </div>
                             <div class="row">
-                                <div class="col-md-12 mt-4">
+                                <div class="col-md-12 mt-sm-4">
                                     <a class="playBut venobox venobox_custom text-decoration-none" data-autoplay="true"
                                         data-overlay="#04040400" data-vbtype="video"
                                         href="https://www.youtube.com/watch?v=jDDaplaOz7Q">
@@ -1373,7 +1378,7 @@
     <section id="specs" class="specs mx-wdth-ctn">
         <div class="container-xl ">
             <div class="row py-5">
-                <div data-aos="fade-right" class="col-lg-4 col-md-4 col-sm-8 col-6 mx-sm-auto ">
+                <div data-aos="fade-up" class="col-lg-4 col-md-4 col-sm-8 col-12 mx-sm-auto ">
                     <div class="box">
                         <div class="img ">
                             <img src="./assets/img/stopwatch.png" alt="">
@@ -1389,7 +1394,7 @@
                     </div>
                 </div>
 
-                <div data-aos="zoom-in-up" class="col-lg-4 col-md-4 col-sm-8 col-6  mx-sm-auto mt-md-0 mt-sm-3">
+                <div data-aos="fade-up" class="col-lg-4 col-md-4 col-sm-8 col-12  mx-sm-auto mt-md-0 mt-sm-3 ">
                     <div class="box recommended">
                         <div class="img ">
                             <img src="./assets/img/safe-box.png" alt="">
@@ -1405,21 +1410,21 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-left" class="col-lg-4 col-md-4 col-sm-8 col-6  mx-sm-auto mt-md-0 mt-sm-3">
-                    <div class="box">
-                        <div class="img ">
-                            <img src="./assets/img/icon.png" alt="">
-                        </div>
-                        <div class="txt ">
-                            <h5 class="px-md-0">Client setisfaction</h5>
-                            <p>All i want to have client setisfaction & this is my aim</p>
-                        </div>
+                    <div data-aos="fade-up" class="col-lg-4 col-md-4 col-sm-8 col-12  mx-sm-auto mt-md-0 mt-sm-3">
+                        <div class="box">
+                            <div class="img ">
+                                <img src="./assets/img/icon.png" alt="">
+                            </div>
+                            <div class="txt ">
+                                <h5 class="px-md-0">Client setisfaction</h5>
+                                <p>All i want to have client setisfaction & this is my aim</p>
+                            </div>
 
-                        <div class="btn-wrap">
-                            <a href="#" class="btn-buy">Learn More</a>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Learn More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
             </div>
 
@@ -1432,7 +1437,7 @@
     <section id="portfolio" class="portfolio mx-wdth-ctn">
         <div class="container">
 
-            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="section-title">
+            <div data-aos="fade-up" class="section-title">
                 <h2>My Portfolio</h2>
 
                 <span class=" text-black-50 text-muted">Web &amp; App</span>
@@ -1587,7 +1592,7 @@
     <section id="testimonial" class="testimonial mx-wdth-ctn">
         <div class="container">
             <div class="row">
-                <div data-aos="flip-up" class="col-12 ">
+                <div data-aos="fade-up" class="col-12 ">
 
                     <div class="section-title">
                         <h2>Valuable Testimonial</h2>
@@ -1599,7 +1604,7 @@
 
             <div class="row d-flex justify-content-center align-items-center position-relative"
                 id="section-testimonial">
-                <div data-aos="zoom-in-up" class="col-xl-8 col-lg-8 col-md-8 col-sm-12 bg-white shadow-lg bg-bdr">
+                <div data-aos="fade-up" class="col-xl-8 col-lg-8 col-md-8 col-sm-12 bg-white shadow-lg bg-bdr">
 
 
                     <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -1839,9 +1844,7 @@
 
 
     <!-- =================== End Footer Section =================== -->
-    <script>
 
-    </script>
 
     <!-- Vendor JS Files -->
 
@@ -1857,7 +1860,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="/assets/js/demo.js"></script>
+    <!-- <script src="/assets/js/demo.js"></script> -->
 
 </body>
 

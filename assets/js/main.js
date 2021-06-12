@@ -2,7 +2,9 @@ $(document).ready(function () {
   $('.venobox').venobox();
   const media = matchMedia('(min-width:576px)');
   const media_2 = matchMedia(('(max-width:992px)'));
+  const media_3 = matchMedia(('(max-width:575px)'));
   var check = new Boolean("");
+  var check_2 = new Boolean("");
 
   window.addEventListener('resize', () => {
     if (media.matches) {
@@ -22,10 +24,20 @@ $(document).ready(function () {
 
   if (check == false) {
     if (media.matches && media_2.matches) {
-      alert("CheckedIn");
+      // alert("CheckedIn");
       addClasses();
     }
   }
+
+
+  window.addEventListener('resize', () => {
+    if (media_3.matches) {
+      $(".vertical-line").parent('.row').removeClass('vertical-line-js');
+    } else {
+      // alert('Kong');
+    }
+  });
+
 
 
   function addClasses() {
@@ -43,29 +55,6 @@ $(document).ready(function () {
     $(".vertical-line").removeClass('d-flex unset-vr justify-content-between align-items-center');
 
   }
-
-
-
-  // media_2.addEventListener("change", () => {
-  //     if (media_2.matches) {
-
-  //       $('.ver-line').removeClass('d-inline-block');
-  //       $('.ver-line').addClass('d-none');
-  //       $(".vertical-line").parent('.row').addClass('vertical-line-js');
-  //       $(".vertical-line").addClass('d-flex unset-vr justify-content-between align-items-center');
-  //       alert("ksjnsdjfnskdjfn");
-
-  //     } else {
-  //       $('.ver-line').addClass('d-inline-block');
-  //       $('.ver-line').removeClass('d-none');
-  //       $(".vertical-line").parent('.row').removeClass('vertical-line-js');
-  //       $(".vertical-line").removeClass('unset-vr d-flex justify-content-between align-items-center');
-
-  //     }
-  //   }
-
-  // );
-
 
 
 });
@@ -156,7 +145,7 @@ function Export2Doc(element, filename = '') {
 
 
 
-function getCtnCreadentials() { 
+function getCtnCreadentials() {   
   var useremail = $("#useremail").val(); //useremail
   var recepname = $("#recipient-name").val(); // recep Name
   var username = $("#username").val(); // Username
